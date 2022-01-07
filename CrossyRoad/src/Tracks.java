@@ -8,7 +8,7 @@ import java.net.URL;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-public class Player {
+public class Tracks {
 	private int x;
 	private int y;
 	private int width;
@@ -35,11 +35,11 @@ public class Player {
 		this.y = y;
 	}
 
-	public Player(int x, int y) {
+	public Tracks(int x, int y) {
 		this.x = x;
 		this.y = y;
 		
-		img = getImage("Chicken.png"); 
+		img = getImage("Tracks.png"); 
 
 		tx = AffineTransform.getTranslateInstance(x, y);
 		init(x,y); 	
